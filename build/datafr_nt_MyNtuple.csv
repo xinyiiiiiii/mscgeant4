@@ -1,0 +1,20 @@
+#class tools::wcsv::ntuple
+#title Test Data
+#separator 44
+#vector_separator 59
+#column int pdgCode
+#column string pName
+#column int eventID
+#column int trackID
+#column double x
+#column double y
+#column double z
+-13,mu+,0,1,-6.86806,-4.81767,480
+-13,mu+,0,1,9.03872,-7.80343,480
+-13,mu+,0,1,-2.21439,1.05302,480
+-13,mu+,0,1,-0.723328,5.4844,480
+-13,mu+,0,1,-6.77515,2.01079,480
+-13,mu+,0,1,2.21514,-2.79868,480
+-13,mu+,0,1,-1.16884,-1.42558,480
+-13,mu+,0,1,1.2216,-10.9836,480
+-13,mu+,0,1,10,3.92252,499.591
