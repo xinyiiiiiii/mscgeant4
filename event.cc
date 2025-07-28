@@ -22,17 +22,17 @@ void MyEventAction::BeginOfEventAction(const G4Event*)
 
 void MyEventAction::EndOfEventAction(const G4Event* event)
 {
-/*
+
     auto analysisManager = G4AnalysisManager::Instance();
     
     G4int eventID = event->GetEventID();
     
     
-    analysisManager->FillNtupleIColumn(3, eventID);
+    analysisManager->FillNtupleIColumn(2, eventID);
     analysisManager->AddNtupleRow();
     
 
-*/
+
     
 
     /*G4cout << "Energy deposition: " << fEdep << G4endl;

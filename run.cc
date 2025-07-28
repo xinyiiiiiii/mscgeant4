@@ -4,7 +4,7 @@
 #include "G4Run.hh"
 
 MyRunAction::MyRunAction()
-{/*
+{
   auto analysisManager = G4AnalysisManager::Instance();
   analysisManager->SetVerboseLevel(1);
   analysisManager->OpenFile("datafr.csv");
@@ -12,14 +12,14 @@ MyRunAction::MyRunAction()
 analysisManager->CreateNtuple("MyNtuple", "Test Data");
 analysisManager->CreateNtupleIColumn("pdgCode");  
 analysisManager->CreateNtupleSColumn("pName");  
-analysisManager->CreateNtupleDColumn("scatAng");  
 analysisManager->CreateNtupleIColumn("eventID");
 analysisManager->CreateNtupleIColumn("trackID");
-analysisManager->CreateNtupleSColumn("mName");
-analysisManager->CreateNtupleSColumn("mThickness");
+analysisManager->CreateNtupleDColumn("x");
+analysisManager->CreateNtupleDColumn("y");
+analysisManager->CreateNtupleDColumn("z");
 analysisManager->FinishNtuple();  
 
-*/
+
 
 }
 

@@ -1,5 +1,6 @@
 #include "detector.hh"
 
+
 MySensitiveDetector::MySensitiveDetector(G4String name):G4VSensitiveDetector(name)
 {}
 
@@ -8,19 +9,48 @@ MySensitiveDetector::~MySensitiveDetector()
 
 G4bool MySensitiveDetector::ProcessHits(G4Step *aStep,G4TouchableHistory *ROhist)
 {
+    auto analysisManager = G4AnalysisManager::Instance();
 
 G4StepPoint* prePoint = aStep->GetPreStepPoint();
-    G4ThreeVector position = prePoint->GetPosition();
+
 
     G4Track* track = aStep->GetTrack();
     G4int trackID = track->GetTrackID();
     G4String particleName = track->GetDefinition()->GetParticleName();
 
+
     if (track->GetParentID() == 0) {  
-        if (aStep->GetPreStepPoint()->GetStepStatus() == fGeomBoundary){
+     if (aStep->GetPreStepPoint()->GetStepStatus() == fGeomBoundary){
+        
+    G4ThreeVector position = prePoint->GetPosition();
+
+        G4double z = position.z();
+        G4double targetZ = 480.0 * mm;
+        G4double tolerance = 0.1 * mm;
+
+
+//if (std::abs(z - targetZ) < tolerance) {
+
+        G4double x = position.x();
+        G4double y = position.y();
+          //  G4cout << "Primary particle at target Z:"
+            //       << " X = " << x/mm << " mm"
+              //     << ", Y = " << y/mm << " mm" << G4endl;
+        
+        
+
+
         G4cout << "Primary particle hit detector: "
                << particleName << " (Track ID: " << trackID << ")"
-               << ", Position: " << position/mm << " mm" << G4endl;
+               << ", Position: " << position/mm << " mm" << ", x: " << x/mm << " mm" << ", y: "<< y/mm << " mm" << G4endl;
+
+analysisManager->FillNtupleDColumn(4,x);
+analysisManager->FillNtupleDColumn(5,y);
+analysisManager->FillNtupleDColumn(6,z);
+
+//}
+
+
     }
 }
 

@@ -18,6 +18,7 @@ int main(int argc, char** argv)
     runManager->SetUserInitialization(new MyPhysicsList());
     runManager->SetUserInitialization(new MyActionInitialization());
 
+
     runManager->Initialize();
     
     G4UIExecutive *ui = new G4UIExecutive(argc, argv);
