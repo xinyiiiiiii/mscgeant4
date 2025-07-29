@@ -587,4 +587,5 @@ CMakeFiles/sim.dir/detector.cc.o: /home/xinyi/mscgeant4/detector.cc \
  /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4Event.hh \
  /home/xinyi/mscgeant4/run.hh \
  /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4UserRunAction.hh \
- /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/globals.hh
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/globals.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4Run.hh

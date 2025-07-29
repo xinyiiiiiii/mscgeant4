@@ -3,6 +3,7 @@
 
 
 
+
 MyEventAction::MyEventAction(MyRunAction*)
 {
     //fEdep = 0.;
@@ -26,9 +27,15 @@ void MyEventAction::EndOfEventAction(const G4Event* event)
     auto analysisManager = G4AnalysisManager::Instance();
     
     G4int eventID = event->GetEventID();
+
+ 
+    
+
+
     
     
     analysisManager->FillNtupleIColumn(2, eventID);
+
     analysisManager->AddNtupleRow();
     
 

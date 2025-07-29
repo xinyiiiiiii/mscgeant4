@@ -17,7 +17,10 @@ analysisManager->CreateNtupleIColumn("trackID");
 analysisManager->CreateNtupleDColumn("x");
 analysisManager->CreateNtupleDColumn("y");
 analysisManager->CreateNtupleDColumn("z");
-analysisManager->FinishNtuple();  
+analysisManager->CreateNtupleIColumn("runID");
+analysisManager->CreateNtupleDColumn("radius");
+analysisManager->FinishNtuple(0);  
+
 
 
 

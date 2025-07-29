@@ -1,4 +1,7 @@
 #include "detector.hh"
+#include "G4RunManager.hh"
+#include "G4Run.hh"
+#include <cmath>
 
 
 MySensitiveDetector::MySensitiveDetector(G4String name):G4VSensitiveDetector(name)
@@ -6,6 +9,11 @@ MySensitiveDetector::MySensitiveDetector(G4String name):G4VSensitiveDetector(nam
 
 MySensitiveDetector::~MySensitiveDetector()
 {}
+
+G4double calcRadius(G4double x_point,G4double y_point){
+    return std::sqrt(x_point*x_point + y_point*y_point);
+
+}
 
 G4bool MySensitiveDetector::ProcessHits(G4Step *aStep,G4TouchableHistory *ROhist)
 {
@@ -21,7 +29,7 @@ G4StepPoint* prePoint = aStep->GetPreStepPoint();
 
     if (track->GetParentID() == 0) {  
      if (aStep->GetPreStepPoint()->GetStepStatus() == fGeomBoundary){
-        
+        if(aStep->IsFirstStepInVolume()){
     G4ThreeVector position = prePoint->GetPosition();
 
         G4double z = position.z();
@@ -29,7 +37,7 @@ G4StepPoint* prePoint = aStep->GetPreStepPoint();
         G4double tolerance = 0.1 * mm;
 
 
-//if (std::abs(z - targetZ) < tolerance) {
+if (std::abs(z - targetZ) < tolerance) {
 
         G4double x = position.x();
         G4double y = position.y();
@@ -44,13 +52,25 @@ G4StepPoint* prePoint = aStep->GetPreStepPoint();
                << particleName << " (Track ID: " << trackID << ")"
                << ", Position: " << position/mm << " mm" << ", x: " << x/mm << " mm" << ", y: "<< y/mm << " mm" << G4endl;
 
+G4int stepNumber = aStep->GetTrack()->GetCurrentStepNumber();
+G4cout << "Step number in SD: " << stepNumber << G4endl;
+
+G4int runID = G4RunManager::GetRunManager()->GetCurrentRun()->GetRunID();
+    G4cout << "Run ID: " << runID <<  G4endl;
+
+
+    G4cout << "Radius: " << calcRadius(x,y)/mm <<  G4endl;
+
+
+
 analysisManager->FillNtupleDColumn(4,x);
 analysisManager->FillNtupleDColumn(5,y);
 analysisManager->FillNtupleDColumn(6,z);
+analysisManager->FillNtupleIColumn(7, runID);
+analysisManager->FillNtupleDColumn(8, calcRadius(x,y));
+}
 
-//}
-
-
+}
     }
 }
 
