@@ -1,12 +1,13 @@
 #include "event.hh"
 #include "G4AnalysisManager.hh"
+#include "G4SystemOfUnits.hh"
+#include <cmath>
 
 
 
 
 MyEventAction::MyEventAction(MyRunAction*)
 {
-    //fEdep = 0.;
 
 }
 
@@ -17,7 +18,6 @@ MyEventAction::~MyEventAction()
 
 void MyEventAction::BeginOfEventAction(const G4Event*)
 {
-    //fEdep = 0.;
 }
 
 
@@ -28,25 +28,19 @@ void MyEventAction::EndOfEventAction(const G4Event* event)
     
     G4int eventID = event->GetEventID();
 
- 
-    
+    const G4PrimaryVertex *vertex = event->GetPrimaryVertex();
+    const G4PrimaryParticle *particle = vertex->GetPrimary();
 
+    G4ThreeVector mom = particle->GetMomentum();
+    G4double mass = particle->GetMass();
 
-    
-    
+    G4double energy = std::sqrt(mom.mag2() + mass*mass);
+    G4double KE = energy - mass;
+    G4cout << "KE:" << KE /MeV << " Mev" << G4endl;
+   
     analysisManager->FillNtupleIColumn(2, eventID);
+    analysisManager->FillNtupleDColumn(9, KE);
 
     analysisManager->AddNtupleRow();
     
-
-
-    
-
-    /*G4cout << "Energy deposition: " << fEdep << G4endl;
-
-    G4AnalysisManager *man = G4AnalysisManager::Instance();
-
-    man->FillNtupleDColumn(2, 0, fEdep);
-
-    man->AddNtupleRow(2);*/
 }

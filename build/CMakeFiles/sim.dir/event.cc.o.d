@@ -341,4 +341,6 @@ CMakeFiles/sim.dir/event.cc.o: /home/xinyi/mscgeant4/event.cc \
  /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4GenericFileManager.hh \
  /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4GenericFileManager.icc \
  /home/xinyi/mscgeant4/run.hh \
- /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4UserRunAction.hh
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4UserRunAction.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/CLHEP/Units/SystemOfUnits.h

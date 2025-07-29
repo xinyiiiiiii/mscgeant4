@@ -41,13 +41,7 @@ if (std::abs(z - targetZ) < tolerance) {
 
         G4double x = position.x();
         G4double y = position.y();
-          //  G4cout << "Primary particle at target Z:"
-            //       << " X = " << x/mm << " mm"
-              //     << ", Y = " << y/mm << " mm" << G4endl;
-        
-        
-
-
+       
         G4cout << "Primary particle hit detector: "
                << particleName << " (Track ID: " << trackID << ")"
                << ", Position: " << position/mm << " mm" << ", x: " << x/mm << " mm" << ", y: "<< y/mm << " mm" << G4endl;
@@ -60,8 +54,6 @@ G4int runID = G4RunManager::GetRunManager()->GetCurrentRun()->GetRunID();
 
 
     G4cout << "Radius: " << calcRadius(x,y)/mm <<  G4endl;
-
-
 
 analysisManager->FillNtupleDColumn(4,x);
 analysisManager->FillNtupleDColumn(5,y);

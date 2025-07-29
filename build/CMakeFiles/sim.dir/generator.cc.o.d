@@ -264,4 +264,82 @@ CMakeFiles/sim.dir/generator.cc.o: /home/xinyi/mscgeant4/generator.cc \
  /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4SystemOfUnits.hh \
  /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4ParticleTable.hh \
  /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4ParticleTableIterator.hh \
- /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4ParticleTable.icc
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4ParticleTable.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4AnalysisManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4VAnalysisManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4AnalysisVerbose.hh \
+ /usr/include/c++/13/array /usr/include/c++/13/compare \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4AnalysisUtilities.hh \
+ /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h /usr/include/c++/13/fstream \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4VTBaseHnManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4HnInformation.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4BinScheme.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4Fcn.hh \
+ /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4VAnalysisManager.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4HnManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4BaseAnalysisManager.hh \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4NtupleBookingManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/ntuple_booking \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/cids \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/cid \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/typedefs \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/forit \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4NtupleBookingManager.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4VNtupleManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4VFileManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4BaseFileManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4VTHnFileManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4TH1ToolsManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4THnToolsManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4THnManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4THnManager.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4THnMessenger.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4UImessenger.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4UIdirectory.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4UIcommand.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4ApplicationState.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4UIparameter.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4THnToolsManager.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4THnMessenger.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4Tokenizer.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4TH2ToolsManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4TH3ToolsManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4TP1ToolsManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4TP2ToolsManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/h1d \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/h1 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/b1 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/base_histo \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/histo_data \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/axes \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/axis \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/eqT \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/h2d \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/h2 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/b2 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/h3d \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/h3 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/b3 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/p1d \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/p1 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/profile_data \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/p2d \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/tools/histo/p2 \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4GenericFileManager.hh \
+ /home/xinyi/software/geant4/geant4-v11.3.2-install/include/Geant4/G4GenericFileManager.icc

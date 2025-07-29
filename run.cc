@@ -19,6 +19,7 @@ analysisManager->CreateNtupleDColumn("y");
 analysisManager->CreateNtupleDColumn("z");
 analysisManager->CreateNtupleIColumn("runID");
 analysisManager->CreateNtupleDColumn("radius");
+analysisManager->CreateNtupleDColumn("KE");
 analysisManager->FinishNtuple(0);  
 
 
