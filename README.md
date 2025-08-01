@@ -1,12 +1,16 @@
-a simple Geant4 simulation of multiple scattering of high energy electron interacting with detector of various materials
+A simple Geant4 simulation of multiple scattering of high-energy particles interacting with slab of various materials.
 
-the Geant4 software needs to be installed to run the file
+The Geant4 software needs to be installed to run the file.
 
-installation information can be found on the Geant4 official website https://geant4.web.cern.ch/download/11.3.2.html
+Installation information can be found on the Geant4 official website: https://geant4.web.cern.ch/download/11.3.2.html
 
-After Installation
+After Installation:
 
 source ~/software/geant4/geant4-v11.3.2-install/share/Geant4/geant4make/geant4make.sh
+
+git clone 
+
+In the mscgeant4 directory:
 
 mkdir build
 
